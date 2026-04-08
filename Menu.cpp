@@ -47,7 +47,7 @@ namespace Feature
 		Style.Colors[ ImGuiCol_Text ]                  = ImVec4( 1.00f, 1.00f, 1.00f, 1.00f );
 		Style.Colors[ ImGuiCol_TextDisabled ]          = ImVec4( 0.59f, 0.59f, 0.59f, 1.00f );
 		Style.Colors[ ImGuiCol_WindowBg ]              = ImVec4( 0.16f, 0.16f, 0.16f, 1.00f );
-		Style.Colors[ ImGuiCol_ChildWindowBg ]         = ImVec4( 0.10f, 0.10f, 0.10f, 0.10f );
+		Style.Colors[ ImGuiCol_ChildBg ]               = ImVec4( 0.10f, 0.10f, 0.10f, 0.10f );
 		Style.Colors[ ImGuiCol_PopupBg ]               = ImVec4( 0.16f, 0.16f, 0.16f, 1.00f );
 		Style.Colors[ ImGuiCol_Border ]                = ImVec4( 0.59f, 0.59f, 0.59f, 1.00f );
 		Style.Colors[ ImGuiCol_BorderShadow ]          = ImVec4( 0.00f, 0.00f, 0.00f, 0.00f );
@@ -62,7 +62,7 @@ namespace Feature
 		Style.Colors[ ImGuiCol_ScrollbarGrab ]         = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_ScrollbarGrabHovered ]  = ImVec4( 1.00f, 0.50f, 0.00f, 0.61f );
 		Style.Colors[ ImGuiCol_ScrollbarGrabActive ]   = ImVec4( 1.00f, 0.50f, 0.00f, 0.39f );
-		Style.Colors[ ImGuiCol_ComboBg ]               = ImVec4( 0.24f, 0.24f, 0.24f, 1.00f );
+		Style.Colors[ ImGuiCol_PopupBg ]               = ImVec4( 0.24f, 0.24f, 0.24f, 1.00f );
 		Style.Colors[ ImGuiCol_CheckMark ]             = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_SliderGrab ]            = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_SliderGrabActive ]      = ImVec4( 1.00f, 0.50f, 0.00f, 0.61f );
@@ -72,25 +72,25 @@ namespace Feature
 		Style.Colors[ ImGuiCol_Header ]                = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_HeaderHovered ]         = ImVec4( 1.00f, 0.50f, 0.00f, 0.61f );
 		Style.Colors[ ImGuiCol_HeaderActive ]          = ImVec4( 1.00f, 0.50f, 0.00f, 0.39f );
-		Style.Colors[ ImGuiCol_Column ]                = ImVec4( 0.59f, 0.59f, 0.59f, 1.00f );
-		Style.Colors[ ImGuiCol_ColumnHovered ]         = ImVec4( 0.59f, 0.59f, 0.59f, 0.61f );
-		Style.Colors[ ImGuiCol_ColumnActive ]          = ImVec4( 0.59f, 0.59f, 0.59f, 0.39f );
+		Style.Colors[ ImGuiCol_Separator ]             = ImVec4( 0.59f, 0.59f, 0.59f, 1.00f );
+		Style.Colors[ ImGuiCol_SeparatorHovered ]      = ImVec4( 0.59f, 0.59f, 0.59f, 0.61f );
+		Style.Colors[ ImGuiCol_SeparatorActive ]       = ImVec4( 0.59f, 0.59f, 0.59f, 0.39f );
 		Style.Colors[ ImGuiCol_ResizeGrip ]            = ImVec4( 1.00f, 1.00f, 1.00f, 0.30f );
 		Style.Colors[ ImGuiCol_ResizeGripHovered ]     = ImVec4( 1.00f, 1.00f, 1.00f, 0.60f );
 		Style.Colors[ ImGuiCol_ResizeGripActive ]      = ImVec4( 1.00f, 1.00f, 1.00f, 0.90f );
-		Style.Colors[ ImGuiCol_CloseButton ]           = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
-		Style.Colors[ ImGuiCol_CloseButtonHovered ]    = ImVec4( 1.00f, 0.50f, 0.00f, 0.61f );
-		Style.Colors[ ImGuiCol_CloseButtonActive ]     = ImVec4( 1.00f, 0.50f, 0.00f, 0.39f );
+		Style.Colors[ ImGuiCol_Tab ]                   = ImVec4( 1.00f, 0.50f, 0.00f, 1.00f );
+		Style.Colors[ ImGuiCol_TabHovered ]            = ImVec4( 1.00f, 0.50f, 0.00f, 0.61f );
+		Style.Colors[ ImGuiCol_TabActive ]             = ImVec4( 1.00f, 0.50f, 0.00f, 0.39f );
 		Style.Colors[ ImGuiCol_PlotLines ]             = ImVec4( 1.00f, 1.00f, 1.00f, 1.00f );
 		Style.Colors[ ImGuiCol_PlotLinesHovered ]      = ImVec4( 0.90f, 0.70f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_PlotHistogram ]         = ImVec4( 0.90f, 0.70f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_PlotHistogramHovered ]  = ImVec4( 1.00f, 0.60f, 0.00f, 1.00f );
 		Style.Colors[ ImGuiCol_TextSelectedBg ]        = ImVec4( 1.00f, 0.50f, 0.00f, 0.39f );
-		Style.Colors[ ImGuiCol_ModalWindowDarkening ]  = ImVec4( 0.20f, 0.20f, 0.20f, 0.35f );
+		Style.Colors[ ImGuiCol_ModalWindowDimBg ]      = ImVec4( 0.20f, 0.20f, 0.20f, 0.35f );
 
 		Style.WindowPadding			= ImVec2( 8, 8 );
 		Style.WindowRounding		= 2;
-		Style.ChildWindowRounding	= 2;
+		Style.ChildRounding			= 2;
 		Style.FramePadding			= ImVec2( 4, 4 );
 		Style.FrameRounding			= 2;
 		Style.ItemSpacing			= ImVec2( 8, 4 );
@@ -351,7 +351,7 @@ namespace Feature
 
 					ImGui::Combo( XorStr( "Mode" ), &Config::Weapon[ i ]->Aimbot->Mode, ModeList, ARRAYSIZE( ModeList ) );
 					if( Config::Weapon[ i ]->Aimbot->Mode == 2 ) // On Press
-						ImGui::KeyButton( XorStr( "Key" ), &Config::Weapon[ i ]->Aimbot->Key );
+						ImGui::InputKey( XorStr( "Key" ), &Config::Weapon[ i ]->Aimbot->Key );
 					ImGui::Checkbox( XorStr( "Auto Fire" ), &Config::Weapon[ i ]->Aimbot->AutoFire );
 					ImGui::Checkbox( XorStr( "Auto Stop" ), &Config::Weapon[ i ]->Aimbot->AutoStop );
 					ImGui::Checkbox( XorStr( "Auto Crouch" ), &Config::Weapon[ i ]->Aimbot->AutoCrouch );
@@ -424,7 +424,7 @@ namespace Feature
 
 					ImGui::Combo( XorStr( "Mode" ), &Config::Main->Aimbot->Mode, ModeList, ARRAYSIZE( ModeList ) );
 					if( Config::Main->Aimbot->Mode == 2 ) // On Press
-						ImGui::KeyButton( XorStr( "Key" ), &Config::Main->Aimbot->Key );
+						ImGui::InputKey( XorStr( "Key" ), &Config::Main->Aimbot->Key );
 					ImGui::Checkbox( XorStr( "Auto Fire" ), &Config::Main->Aimbot->AutoFire );
 					ImGui::Checkbox( XorStr( "Auto Stop" ), &Config::Main->Aimbot->AutoStop );
 					ImGui::Checkbox( XorStr( "Auto Crouch" ), &Config::Main->Aimbot->AutoCrouch );
@@ -510,7 +510,7 @@ namespace Feature
 
 					ImGui::Combo( XorStr( "Mode" ), &Config::Weapon[ i ]->Triggerbot->Mode, ModeList, ARRAYSIZE( ModeList ) );
 					if( Config::Weapon[ i ]->Triggerbot->Mode == 2 )
-						ImGui::KeyButton( XorStr( "Key" ), &Config::Weapon[ i ]->Triggerbot->Key );
+						ImGui::InputKey( XorStr( "Key" ), &Config::Weapon[ i ]->Triggerbot->Key );
 
 					ImGui::Separator();
 
@@ -520,7 +520,7 @@ namespace Feature
 
 					ImGui::Separator();
 
-					ImGui::ListBoxHeader( XorStr( "Spot" ) );
+					ImGui::BeginListBox( XorStr( "Spot" ) );
 
 					ImGui::Selectable( XorStr( "Head" ), &Config::Weapon[ i ]->Triggerbot->Head );
 					ImGui::Selectable( XorStr( "Chest" ), &Config::Weapon[ i ]->Triggerbot->Chest );
@@ -528,7 +528,7 @@ namespace Feature
 					ImGui::Selectable( XorStr( "Arms" ), &Config::Weapon[ i ]->Triggerbot->Arms );
 					ImGui::Selectable( XorStr( "Legs" ), &Config::Weapon[ i ]->Triggerbot->Legs );
 
-					ImGui::ListBoxFooter();
+					ImGui::EndListBox();
 
 					ImGui::Separator();
 
@@ -548,7 +548,7 @@ namespace Feature
 					
 					ImGui::Combo( XorStr( "Mode" ), &Config::Main->Triggerbot->Mode, ModeList, ARRAYSIZE( ModeList ) );
 					if( Config::Main->Triggerbot->Mode == 2 )
-						ImGui::KeyButton( XorStr( "Key" ), &Config::Main->Triggerbot->Key );
+						ImGui::InputKey( XorStr( "Key" ), &Config::Main->Triggerbot->Key );
 
 					ImGui::Separator();
 
@@ -558,7 +558,7 @@ namespace Feature
 					
 					ImGui::Separator();
 
-					ImGui::ListBoxHeader( XorStr( "Spot" ) );
+					ImGui::BeginListBox( XorStr( "Spot" ) );
 
 					ImGui::Selectable( XorStr( "Head" ), &Config::Main->Triggerbot->Head );
 					ImGui::Selectable( XorStr( "Chest" ), &Config::Main->Triggerbot->Chest );
@@ -566,7 +566,7 @@ namespace Feature
 					ImGui::Selectable( XorStr( "Arms" ), &Config::Main->Triggerbot->Arms );
 					ImGui::Selectable( XorStr( "Legs" ), &Config::Main->Triggerbot->Legs );
 
-					ImGui::ListBoxFooter();
+					ImGui::EndListBox();
 
 					ImGui::Separator();
 
@@ -704,14 +704,14 @@ namespace Feature
 
 				ImGui::Checkbox( XorStr( "Air Stuck" ), &Config::Misc->AirStuck );
 				if( Config::Misc->AirStuck )
-					ImGui::KeyButton( XorStr( "Stuck Key" ), &Config::Misc->StuckKey );
+					ImGui::InputKey( XorStr( "Stuck Key" ), &Config::Misc->StuckKey );
 
 				ImGui::Separator();
 
 				ImGui::Checkbox( XorStr( "Speed" ), &Config::Misc->Speed );
 				if( Config::Misc->Speed )
 				{
-					ImGui::KeyButton( XorStr( "Key" ), &Config::Misc->SpeedKey );
+					ImGui::InputKey( XorStr( "Key" ), &Config::Misc->SpeedKey );
 					ImGui::SliderInt( XorStr( "Factor" ), &Config::Misc->SpeedFactor, 1, 20 );
 				}
 
@@ -726,7 +726,7 @@ namespace Feature
 
 		if( m_bPlayers )
 		{
-			ImGui::SetNextWindowSize( { 500, 400 }, ImGuiSetCond_Appearing );
+			ImGui::SetNextWindowSize( { 500, 400 }, ImGuiCond_Appearing );
 			ImGui::Begin( XorStr( "Players" ), nullptr, ImGuiWindowFlags_NoCollapse );
 			{
 				RenderPlayers();
@@ -781,9 +781,9 @@ namespace Feature
 		{
 			ImGui::Begin( XorStr( "Binds" ), nullptr, Flags );
 			{
-				ImGui::KeyButton( XorStr( "Menu" ), &Config::Binds->Menu );
-				ImGui::KeyButton( XorStr( "Eject" ), &Config::Binds->Eject );
-				ImGui::KeyButton( XorStr( "Panic" ), &Config::Binds->Panic );
+				ImGui::InputKey( XorStr( "Menu" ), &Config::Binds->Menu );
+				ImGui::InputKey( XorStr( "Eject" ), &Config::Binds->Eject );
+				ImGui::InputKey( XorStr( "Panic" ), &Config::Binds->Panic );
 			}
 			ImGui::End();
 		}
@@ -792,7 +792,7 @@ namespace Feature
 		{
 			ImGui::Begin( XorStr( "Config" ), nullptr, Flags );
 			{
-				ImGui::ListBoxHeader( "" );
+				ImGui::BeginListBox( "" );
 
 				WIN32_FIND_DATAA ffd;
 				LARGE_INTEGER filesize;
@@ -839,7 +839,7 @@ namespace Feature
 					FindClose( hFind );
 				}
 
-				ImGui::ListBoxFooter();
+				ImGui::EndListBox();
 
 				ImGui::InputText( "", m_szConfigName, sizeof( m_szConfigName ) );
 
@@ -1051,9 +1051,9 @@ namespace Feature
 			Style.Colors[ ImGuiCol_Header ][ i ]                = m_flColors[ COL_MAIN ][ i ];
 			Style.Colors[ ImGuiCol_HeaderHovered ][ i ]         = m_flColors[ COL_MAIN ][ i ];
 			Style.Colors[ ImGuiCol_HeaderActive ][ i ]          = m_flColors[ COL_MAIN ][ i ];
-			Style.Colors[ ImGuiCol_CloseButton ][ i ]           = m_flColors[ COL_MAIN ][ i ];
-			Style.Colors[ ImGuiCol_CloseButtonHovered ][ i ]    = m_flColors[ COL_MAIN ][ i ];
-			Style.Colors[ ImGuiCol_CloseButtonActive ][ i ]     = m_flColors[ COL_MAIN ][ i ];
+			Style.Colors[ ImGuiCol_Tab ][ i ]                   = m_flColors[ COL_MAIN ][ i ];
+			Style.Colors[ ImGuiCol_TabHovered ][ i ]            = m_flColors[ COL_MAIN ][ i ];
+			Style.Colors[ ImGuiCol_TabActive ][ i ]             = m_flColors[ COL_MAIN ][ i ];
 			Style.Colors[ ImGuiCol_TextSelectedBg ][ i ]        = m_flColors[ COL_MAIN ][ i ];
 		}
 	}
@@ -1092,9 +1092,9 @@ namespace Feature
 			Style.Colors[ ImGuiCol_Header ][ i ]                = Config::Colors->Main[ i ] / 255.0f;
 			Style.Colors[ ImGuiCol_HeaderHovered ][ i ]         = Config::Colors->Main[ i ] / 255.0f;
 			Style.Colors[ ImGuiCol_HeaderActive ][ i ]          = Config::Colors->Main[ i ] / 255.0f;
-			Style.Colors[ ImGuiCol_CloseButton ][ i ]           = Config::Colors->Main[ i ] / 255.0f;
-			Style.Colors[ ImGuiCol_CloseButtonHovered ][ i ]    = Config::Colors->Main[ i ] / 255.0f;
-			Style.Colors[ ImGuiCol_CloseButtonActive ][ i ]     = Config::Colors->Main[ i ] / 255.0f;
+			Style.Colors[ ImGuiCol_Tab ][ i ]                   = Config::Colors->Main[ i ] / 255.0f;
+			Style.Colors[ ImGuiCol_TabHovered ][ i ]            = Config::Colors->Main[ i ] / 255.0f;
+			Style.Colors[ ImGuiCol_TabActive ][ i ]             = Config::Colors->Main[ i ] / 255.0f;
 			Style.Colors[ ImGuiCol_TextSelectedBg ][ i ]        = Config::Colors->Main[ i ] / 255.0f;
 		}
 	}
